@@ -13,14 +13,12 @@
   input:focus{outline:none;border-color:#d4748a !important;box-shadow:0 0 0 3px rgba(212,116,138,0.15)}
   button{transition:all .2s;cursor:pointer;border:none;font-family:'Noto Sans KR',sans-serif}
   button:active{transform:scale(0.97)}
-
   .header{text-align:center;padding:48px 0 24px;position:relative;z-index:1;width:100%;max-width:480px}
   .hline{height:1px;background:linear-gradient(90deg,transparent,#d4a0b0,transparent);margin:12px auto;width:80%}
   .hsub{font-family:'Nanum Myeongjo',serif;font-size:13px;color:#b07080;letter-spacing:4px;margin-bottom:8px}
   .htitle{font-family:'Nanum Myeongjo',serif;font-size:28px;font-weight:800;color:#3d2030;letter-spacing:2px;margin:8px 0}
   .hdate{font-size:13px;color:#8a6070;letter-spacing:1px;margin-top:6px}
   .amp{color:#d4748a;margin:0 6px}
-
   .card{width:100%;max-width:480px;background:rgba(255,255,255,0.88);backdrop-filter:blur(8px);border-radius:20px;box-shadow:0 4px 24px rgba(180,100,120,0.12);padding:24px;margin-bottom:14px;border:1px solid rgba(212,180,190,0.3);position:relative;z-index:1}
   .seat-label{font-size:12px;color:#b07080;letter-spacing:2px;margin-bottom:8px;text-align:center}
   .seat-nums{text-align:center;margin-bottom:10px}
@@ -29,96 +27,82 @@
   .bar-outer{height:8px;background:#f0e0e4;border-radius:99px;overflow:hidden;margin:0 auto 8px;max-width:280px}
   .bar-inner{height:100%;border-radius:99px;transition:width .6s ease}
   .seat-sub{font-size:12px;color:#b07080;text-align:center}
-
   .info-card{width:100%;max-width:480px;background:rgba(255,255,255,0.88);backdrop-filter:blur(8px);border-radius:20px;box-shadow:0 4px 24px rgba(180,100,120,0.1);padding:14px 20px;margin-bottom:20px;border:1px solid rgba(212,180,190,0.3);position:relative;z-index:1}
   .info-row{display:flex;align-items:flex-start;gap:12px;padding:10px 0}
   .info-icon{font-size:20px;margin-top:2px}
   .info-title{font-size:11px;color:#b07080;letter-spacing:1px;margin-bottom:2px}
   .info-val{font-size:14px;color:#3d2030;font-weight:500;line-height:1.5}
+  .info-hint{font-size:11px;color:#c08090;margin-top:2px}
   .divider{height:1px;background:rgba(212,180,190,0.25)}
-
   .actions{display:flex;flex-direction:column;gap:12px;width:100%;max-width:480px;position:relative;z-index:1}
   .btn{padding:14px 24px;border-radius:14px;font-size:15px;font-weight:500;width:100%}
   .btn-primary{background:linear-gradient(135deg,#d4748a,#c45a72);color:#fff;box-shadow:0 4px 16px rgba(196,90,114,0.35)}
-  .btn-secondary{background:rgba(255,255,255,0.9);color:#b07080;border:1px solid rgba(212,180,190,0.5) !important}
-  .btn-ghost{background:transparent;color:#999;border:1px solid #ddd !important}
+  .btn-secondary{background:rgba(255,255,255,0.9);color:#b07080;border:1px solid rgba(212,180,190,0.5)!important}
+  .btn-ghost{background:transparent;color:#999;border:1px solid #ddd!important}
   .btn-danger{background:#e53e3e;color:#fff}
   .btn:disabled{opacity:0.6;cursor:not-allowed}
-
   .form-card{width:100%;max-width:480px;background:rgba(255,255,255,0.94);backdrop-filter:blur(12px);border-radius:20px;box-shadow:0 8px 32px rgba(180,100,120,0.14);padding:24px;border:1px solid rgba(212,180,190,0.3);position:relative;z-index:1}
   .form-title{font-family:'Nanum Myeongjo',serif;font-size:20px;color:#3d2030;margin-bottom:20px;font-weight:700}
   .label{display:block;font-size:12px;color:#b07080;letter-spacing:1px;margin-bottom:6px}
-  .input{width:100%;padding:12px 14px;border-radius:10px;border:1px solid #e8d0d8;font-size:15px;font-family:'Noto Sans KR',sans-serif;margin-bottom:16px;background:#fff;color:#3d2030}
+  .input{width:100%;padding:12px 14px;border-radius:10px;border:1px solid #e8d0d8;font-size:15px;font-family:'Noto Sans KR',sans-serif;margin-bottom:4px;background:#fff;color:#3d2030}
+  .input.invalid{border-color:#e53e3e !important;box-shadow:0 0 0 3px rgba(229,62,62,0.1)}
+  .input.valid{border-color:#38a169 !important;box-shadow:0 0 0 3px rgba(56,161,105,0.1)}
+  .input-hint{font-size:11px;margin-bottom:12px;min-height:16px}
+  .input-hint.err{color:#e53e3e}
+  .input-hint.ok{color:#38a169}
+  .input-hint.muted{color:#b0a0a8}
   .seats-row{display:flex;gap:8px;margin-bottom:20px}
-  .seat-btn{flex:1;padding:12px 0;border-radius:10px;border:1.5px solid #e8d0d8 !important;background:#fff;font-size:16px;font-weight:600;color:#8a6070}
-  .seat-btn.on{background:linear-gradient(135deg,#d4748a,#c45a72);color:#fff;border:1.5px solid transparent !important;box-shadow:0 4px 12px rgba(196,90,114,0.3)}
+  .seat-btn{flex:1;padding:12px 0;border-radius:10px;border:1.5px solid #e8d0d8!important;background:#fff;font-size:16px;font-weight:600;color:#8a6070}
+  .seat-btn.on{background:linear-gradient(135deg,#d4748a,#c45a72);color:#fff;border:1.5px solid transparent!important;box-shadow:0 4px 12px rgba(196,90,114,0.3)}
   .seat-btn:disabled{opacity:0.3;cursor:not-allowed}
   .form-btns{display:flex;gap:10px}
   .err{font-size:13px;color:#e53e3e;margin-bottom:12px}
-  .load-txt{text-align:center;color:#b07080;font-size:14px;padding:8px 0}
-
   .done-box{text-align:center;padding:16px 0}
-  .done-icon{font-size:48px;margin-bottom:12px}
   .done-title{font-family:'Nanum Myeongjo',serif;font-size:22px;color:#3d2030;font-weight:700;margin-bottom:8px}
   .done-sub{font-size:14px;color:#8a6070;line-height:1.8}
-
   .admin-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
   .badge{background:linear-gradient(135deg,#d4748a,#c45a72);color:#fff;padding:4px 12px;border-radius:99px;font-size:13px;font-weight:600}
-  .empty-msg{text-align:center;color:#b0a0a4;padding:24px 0;font-size:14px}
   .table-wrap{overflow-x:auto;margin-bottom:8px}
   table{width:100%;border-collapse:collapse;font-size:13px}
   th{padding:8px 10px;background:#f8f0f2;color:#b07080;font-size:11px;letter-spacing:1px;text-align:left;font-weight:600}
   td{padding:10px;color:#3d2030;border-bottom:1px solid #f0e8ea;font-size:13px}
   tr:nth-child(even){background:#fffafb}
-  .del-btn{background:none;border:none !important;color:#e08090;font-size:14px;font-weight:700;padding:4px 8px;width:auto}
-
+  .del-btn{background:none;border:none!important;color:#e08090;font-size:14px;font-weight:700;padding:4px 8px;width:auto}
   .overlay{position:fixed;inset:0;background:rgba(0,0,0,0.4);display:flex;align-items:center;justify-content:center;z-index:100}
   .modal{background:#fff;border-radius:20px;padding:28px;max-width:320px;width:90%;text-align:center;box-shadow:0 12px 40px rgba(0,0,0,0.2)}
   .modal p{font-size:16px;color:#3d2030;margin-bottom:20px;font-weight:500}
-
   .footer{margin-top:32px;font-size:11px;color:#c0a8b0;letter-spacing:1px;position:relative;z-index:1}
-
   .hidden{display:none}
-  .refresh-btn{padding:6px 14px;font-size:12px;width:auto;margin-bottom:12px}
 </style>
 </head>
 <body>
 
 <script>
-const API_URL = "https://script.google.com/macros/s/AKfycbwiJZAfOON0YMIWOAC3ZzkKMOG3S-eOUfplqeInFa9-TIlTUyhsyELIfmiSTy9scpIo/exec";
+const API = "https://script.google.com/macros/s/AKfycbwiJZAfOON0YMIWOAC3ZzkKMOG3S-eOUfplqeInFa9-TIlTUyhsyELIfmiSTy9scpIo/exec";
 const TOTAL = 45;
 const ADMIN_PW = "1113";
 
 let reservations = [];
 let deleteTargetId = null;
-let submittedName = "";
-let submittedSeats = 1;
+let phoneValid = false;
 
-async function apiGet() {
-  const res = await fetch(API_URL);
-  const data = await res.json();
-  return Array.isArray(data) ? data : [];
-}
-
-async function apiPost(body) {
-  await fetch(API_URL, {
-    method: "POST",
-    mode: "no-cors",
-    headers: { "Content-Type": "text/plain;charset=utf-8" },
-    body: JSON.stringify(body),
-  });
+async function apiCall(params) {
+  const url = API + "?" + new URLSearchParams(params).toString();
+  const res = await fetch(url);
+  return await res.json();
 }
 
 async function fetchData() {
   try {
-    reservations = await apiGet();
+    const data = await apiCall({ action: "list" });
+    reservations = Array.isArray(data) ? data : [];
     updateSeatUI();
   } catch(e) {
-    document.getElementById("seat-area").innerHTML = `<p class="err" style="text-align:center">데이터를 불러오지 못했습니다.<br><button class="btn btn-ghost" style="width:auto;padding:8px 20px;margin-top:8px" onclick="reloadPage()">다시 시도</button></p>`;
+    document.getElementById("seat-area").innerHTML =
+      `<p style="text-align:center;color:#e53e3e;font-size:13px">데이터를 불러오지 못했습니다.<br>
+       <button class="btn btn-ghost" style="width:auto;padding:8px 20px;margin-top:8px" onclick="location.reload()">다시 시도</button></p>`;
   }
 }
-
-function reloadPage() { location.reload(); }
 
 function updateSeatUI() {
   const taken = reservations.reduce((s,r) => s + Number(r.seats), 0);
@@ -130,63 +114,91 @@ function updateSeatUI() {
   document.getElementById("seat-bar").style.width = pct + "%";
   document.getElementById("seat-bar").style.background = color;
   document.getElementById("seat-sub").textContent = remain === 0 ? "😢 마감되었습니다" : taken + "명 예약 완료";
-  const applyBtn = document.getElementById("apply-btn");
-  applyBtn.disabled = remain === 0;
-  applyBtn.textContent = remain === 0 ? "😢 마감되었습니다" : "🪑 탑승 신청하기";
-
-  // update seat buttons in form
-  document.querySelectorAll(".seat-btn").forEach(btn => {
-    const n = parseInt(btn.dataset.n);
-    btn.disabled = n > remain;
-  });
-
-  // update admin badge
+  const btn = document.getElementById("apply-btn");
+  btn.disabled = remain === 0;
+  btn.textContent = remain === 0 ? "😢 마감되었습니다" : "🪑 탑승 신청하기";
+  document.querySelectorAll(".seat-btn").forEach(b => { b.disabled = parseInt(b.dataset.n) > remain; });
   document.getElementById("admin-badge").textContent = taken + " / " + TOTAL + "석";
 }
 
 function showPage(id) {
   ["page-main","page-form","page-admin","page-done"].forEach(p => {
     const el = document.getElementById(p);
-    if(el) el.classList.add("hidden");
+    if (el) el.classList.add("hidden");
   });
-  const target = document.getElementById(id);
-  if(target) target.classList.remove("hidden");
+  document.getElementById(id).classList.remove("hidden");
 }
 
 function selectSeat(n) {
   document.querySelectorAll(".seat-btn").forEach(b => b.classList.remove("on"));
   const btn = document.querySelector(`.seat-btn[data-n="${n}"]`);
-  if(btn && !btn.disabled) {
-    btn.classList.add("on");
-    document.getElementById("selected-seats").value = n;
+  if (btn && !btn.disabled) { btn.classList.add("on"); document.getElementById("sel-seats").value = n; }
+}
+
+// 전화번호 입력: 숫자만 허용, 실시간 유효성 검사
+function onPhoneInput(e) {
+  // 숫자 외 문자 즉시 제거
+  let val = e.target.value.replace(/\D/g, "");
+  if (val.length > 11) val = val.slice(0, 11);
+  e.target.value = val;
+
+  const hint = document.getElementById("phone-hint");
+  const input = document.getElementById("inp-phone");
+
+  if (val.length === 0) {
+    input.className = "input";
+    hint.textContent = "숫자만 입력해주세요 (예: 01012345678)";
+    hint.className = "input-hint muted";
+    phoneValid = false;
+  } else if (val.length < 11) {
+    input.className = "input invalid";
+    hint.textContent = `${val.length}/11자리 — ${11 - val.length}자리 더 입력해주세요`;
+    hint.className = "input-hint err";
+    phoneValid = false;
+  } else {
+    // 11자리: 010/011/016/017/018/019 체크
+    if (!/^01[016789]\d{8}$/.test(val)) {
+      input.className = "input invalid";
+      hint.textContent = "올바른 휴대폰 번호가 아닙니다";
+      hint.className = "input-hint err";
+      phoneValid = false;
+    } else {
+      input.className = "input valid";
+      hint.textContent = "✓ 올바른 번호입니다";
+      hint.className = "input-hint ok";
+      phoneValid = true;
+    }
   }
 }
 
 async function submitForm() {
-  const name = document.getElementById("inp-name").value.trim();
+  const name  = document.getElementById("inp-name").value.trim();
   const phone = document.getElementById("inp-phone").value.trim();
-  const seats = parseInt(document.getElementById("selected-seats").value);
+  const seats = parseInt(document.getElementById("sel-seats").value);
   const errEl = document.getElementById("form-err");
   errEl.textContent = "";
 
-  if(!name || !phone) { errEl.textContent = "⚠️ 이름과 연락처를 입력해주세요."; return; }
+  if (!name) { errEl.textContent = "⚠️ 이름을 입력해주세요."; return; }
+  if (!phoneValid) { errEl.textContent = "⚠️ 올바른 휴대폰 번호 11자리를 입력해주세요."; return; }
 
-  const dup = reservations.find(r => r.phone.replace(/-/g,"") === phone.replace(/-/g,""));
-  if(dup) { errEl.textContent = "⚠️ 동일한 연락처로 이미 신청하셨습니다."; return; }
+  const dup = reservations.find(r => r.phone.replace(/\D/g,"") === phone.replace(/\D/g,""));
+  if (dup) { errEl.textContent = "⚠️ 동일한 번호로 이미 신청하셨습니다."; return; }
 
-  const taken = reservations.reduce((s,r)=>s+Number(r.seats),0);
-  if(seats > TOTAL - taken) { errEl.textContent = "⚠️ 잔여 좌석이 부족합니다."; return; }
+  const taken = reservations.reduce((s,r) => s + Number(r.seats), 0);
+  if (seats > TOTAL - taken) { errEl.textContent = "⚠️ 잔여 좌석이 부족합니다."; return; }
 
   const submitBtn = document.getElementById("submit-btn");
   submitBtn.disabled = true;
   submitBtn.textContent = "처리 중...";
 
   try {
-    await apiPost({ action:"add", id:Date.now(), name, phone, seats, at: new Date().toLocaleString("ko-KR") });
-    await new Promise(r => setTimeout(r, 1200));
+    await apiCall({
+      action: "add",
+      id: Date.now(),
+      name, phone, seats,
+      at: new Date().toLocaleString("ko-KR")
+    });
     await fetchData();
-    submittedName = name;
-    submittedSeats = seats;
     document.getElementById("done-name").textContent = name;
     document.getElementById("done-seats").textContent = seats;
     showPage("page-done");
@@ -198,8 +210,7 @@ async function submitForm() {
 }
 
 function tryAdminLogin() {
-  const pw = document.getElementById("admin-pw").value;
-  if(pw === ADMIN_PW) {
+  if (document.getElementById("admin-pw").value === ADMIN_PW) {
     document.getElementById("admin-login-area").classList.add("hidden");
     document.getElementById("admin-table-area").classList.remove("hidden");
     renderAdminTable();
@@ -210,20 +221,17 @@ function tryAdminLogin() {
 
 function renderAdminTable() {
   const tbody = document.getElementById("admin-tbody");
-  if(reservations.length === 0) {
+  if (!reservations.length) {
     tbody.innerHTML = `<tr><td colspan="6" style="text-align:center;color:#b0a0a4;padding:24px">아직 신청자가 없습니다.</td></tr>`;
     return;
   }
   tbody.innerHTML = reservations.map((r,i) => `
     <tr>
-      <td>${i+1}</td>
-      <td>${r.name}</td>
-      <td>${r.phone}</td>
+      <td>${i+1}</td><td>${r.name}</td><td>${r.phone}</td>
       <td style="text-align:center">${r.seats}석</td>
       <td style="font-size:11px;color:#aaa">${r.at}</td>
-      <td style="text-align:center"><button class="del-btn" onclick="confirmDelete(${r.id})">✕</button></td>
-    </tr>
-  `).join("");
+      <td style="text-align:center"><button class="del-btn" onclick="confirmDelete('${r.id}')">✕</button></td>
+    </tr>`).join("");
 }
 
 function confirmDelete(id) {
@@ -232,10 +240,9 @@ function confirmDelete(id) {
 }
 
 async function doDelete() {
-  if(!deleteTargetId) return;
+  if (!deleteTargetId) return;
   try {
-    await apiPost({ action:"delete", id: deleteTargetId });
-    await new Promise(r => setTimeout(r, 1200));
+    await apiCall({ action: "delete", id: deleteTargetId });
     await fetchData();
     renderAdminTable();
   } catch(e) {}
@@ -248,14 +255,25 @@ async function adminRefresh() {
   renderAdminTable();
 }
 
+function openForm() {
+  showPage('page-form');
+  document.getElementById('inp-name').value = '';
+  document.getElementById('inp-phone').value = '';
+  document.getElementById('inp-phone').className = 'input';
+  document.getElementById('phone-hint').textContent = '숫자만 입력해주세요 (예: 01012345678)';
+  document.getElementById('phone-hint').className = 'input-hint muted';
+  document.getElementById('form-err').textContent = '';
+  phoneValid = false;
+  selectSeat(1);
+}
+
 window.onload = async function() {
-  // generate petals
-  const petalContainer = document.getElementById("petals");
-  for(let i=0;i<14;i++){
+  const pc = document.getElementById("petals");
+  for (let i = 0; i < 14; i++) {
     const d = document.createElement("div");
     d.className = "petal";
     d.style.cssText = `width:${8+(i%4)*4}px;height:${13+(i%3)*5}px;background:${i%2===0?"rgba(255,182,193,0.3)":"rgba(255,218,224,0.2)"};left:${(i*137.5)%100}%;top:${(i*97.3)%100}%;transform:rotate(${i*47}deg);animation-duration:${4+(i%4)}s;animation-delay:${i*0.3}s`;
-    petalContainer.appendChild(d);
+    pc.appendChild(d);
   }
   await fetchData();
 };
@@ -268,7 +286,7 @@ window.onload = async function() {
   <div class="hline"></div>
   <p class="hsub">결혼을 축하합니다</p>
   <h1 class="htitle">김병건 <span class="amp">♥</span> 이주영</h1>
-  <p class="hdate">2025년 6월 13일 (금) · 오후 12시 30분</p>
+  <p class="hdate">2026년 6월 13일 (토) · 오후 12시 30분</p>
   <div class="hline"></div>
 </div>
 
@@ -277,7 +295,7 @@ window.onload = async function() {
   <div id="seat-area">
     <p class="seat-label">버스 잔여 좌석</p>
     <div class="seat-nums">
-      <span class="seat-remain" id="seat-remain" style="color:#38a169">45</span>
+      <span class="seat-remain" id="seat-remain" style="color:#38a169">—</span>
       <span class="seat-of"> / 45</span>
     </div>
     <div class="bar-outer">
@@ -302,6 +320,7 @@ window.onload = async function() {
     <div>
       <p class="info-title">출발 시간</p>
       <p class="info-val">오전 11:00 출발</p>
+      <p class="info-hint">※ 10분 전 도착 부탁드립니다</p>
     </div>
   </div>
   <div class="divider"></div>
@@ -316,10 +335,11 @@ window.onload = async function() {
 
 <!-- PAGE: MAIN -->
 <div id="page-main" class="actions">
-  <button id="apply-btn" class="btn btn-primary" onclick="showPage('page-form'); document.getElementById('inp-name').value=''; document.getElementById('inp-phone').value=''; document.getElementById('form-err').textContent=''; selectSeat(1);">
+  <button id="apply-btn" class="btn btn-primary" onclick="openForm()">
     🪑 탑승 신청하기
   </button>
-  <button class="btn btn-secondary" onclick="showPage('page-admin'); document.getElementById('admin-pw').value=''; document.getElementById('admin-err').textContent=''; document.getElementById('admin-login-area').classList.remove('hidden'); document.getElementById('admin-table-area').classList.add('hidden');">
+  <button class="btn btn-secondary"
+    onclick="showPage('page-admin'); document.getElementById('admin-pw').value=''; document.getElementById('admin-err').textContent=''; document.getElementById('admin-login-area').classList.remove('hidden'); document.getElementById('admin-table-area').classList.add('hidden');">
     🔒 관리자
   </button>
 </div>
@@ -327,12 +347,18 @@ window.onload = async function() {
 <!-- PAGE: FORM -->
 <div id="page-form" class="form-card hidden">
   <h2 class="form-title">탑승 신청</h2>
+
   <label class="label">이름</label>
-  <input class="input" id="inp-name" placeholder="홍길동"/>
+  <input class="input" id="inp-name" placeholder="홍길동" style="margin-bottom:16px"/>
+
   <label class="label">연락처</label>
-  <input class="input" id="inp-phone" placeholder="010-0000-0000" type="tel"/>
+  <input class="input" id="inp-phone" placeholder="01012345678"
+    type="tel" inputmode="numeric" maxlength="11"
+    oninput="onPhoneInput(event)"/>
+  <p class="input-hint muted" id="phone-hint">숫자만 입력해주세요 (예: 01012345678)</p>
+
   <label class="label">인원 수</label>
-  <input type="hidden" id="selected-seats" value="1"/>
+  <input type="hidden" id="sel-seats" value="1"/>
   <div class="seats-row">
     <button class="seat-btn on" data-n="1" onclick="selectSeat(1)">1</button>
     <button class="seat-btn" data-n="2" onclick="selectSeat(2)">2</button>
@@ -340,6 +366,7 @@ window.onload = async function() {
     <button class="seat-btn" data-n="4" onclick="selectSeat(4)">4</button>
     <button class="seat-btn" data-n="5" onclick="selectSeat(5)">5</button>
   </div>
+
   <p class="err" id="form-err"></p>
   <div class="form-btns">
     <button class="btn btn-ghost" onclick="showPage('page-main')">취소</button>
@@ -350,7 +377,7 @@ window.onload = async function() {
 <!-- PAGE: DONE -->
 <div id="page-done" class="form-card hidden">
   <div class="done-box">
-    <div class="done-icon">🎉</div>
+    <div style="font-size:48px;margin-bottom:12px">🎉</div>
     <p class="done-title">신청 완료!</p>
     <p class="done-sub">
       <b id="done-name"></b>님 (<span id="done-seats"></span>석) 예약이 완료되었습니다.<br/>
@@ -362,32 +389,27 @@ window.onload = async function() {
 
 <!-- PAGE: ADMIN -->
 <div id="page-admin" class="form-card hidden">
-  <!-- LOGIN -->
   <div id="admin-login-area">
     <h2 class="form-title">🔒 관리자 확인</h2>
     <label class="label">비밀번호</label>
     <input class="input" id="admin-pw" type="password" placeholder="••••"
-      onkeydown="if(event.key==='Enter') tryAdminLogin()"/>
+      onkeydown="if(event.key==='Enter') tryAdminLogin()" style="margin-bottom:4px"/>
     <p class="err" id="admin-err"></p>
     <div class="form-btns">
       <button class="btn btn-ghost" onclick="showPage('page-main')">취소</button>
       <button class="btn btn-primary" onclick="tryAdminLogin()">확인</button>
     </div>
   </div>
-  <!-- TABLE -->
   <div id="admin-table-area" class="hidden">
     <div class="admin-head">
       <h2 class="form-title" style="margin-bottom:0">📋 예약 현황</h2>
       <span class="badge" id="admin-badge">0 / 45석</span>
     </div>
-    <button class="btn btn-ghost refresh-btn" onclick="adminRefresh()">🔄 새로고침</button>
+    <button class="btn btn-ghost" style="padding:6px 14px;width:auto;font-size:12px;margin-bottom:12px"
+      onclick="adminRefresh()">🔄 새로고침</button>
     <div class="table-wrap">
       <table>
-        <thead>
-          <tr>
-            <th>#</th><th>이름</th><th>연락처</th><th>인원</th><th>신청일시</th><th>삭제</th>
-          </tr>
-        </thead>
+        <thead><tr><th>#</th><th>이름</th><th>연락처</th><th>인원</th><th>신청일시</th><th>삭제</th></tr></thead>
         <tbody id="admin-tbody"></tbody>
       </table>
     </div>
@@ -406,6 +428,6 @@ window.onload = async function() {
   </div>
 </div>
 
-<p class="footer">© 2025 김병건 · 이주영 결혼식</p>
+<p class="footer">© 2026 김병건 · 이주영 결혼식</p>
 </body>
 </html>
